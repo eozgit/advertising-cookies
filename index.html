@@ -33,6 +33,44 @@
 
     <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
     <script>
+        const customised = {
+          initialState: 'open',
+          layout: 'slideout',
+          consentCookieExpiry: 365,
+          logConsent: true,
+          statement: {
+            description: '',
+            name: 'Cookies Policy',
+            url: 'https://www.majestic.co.uk/content/information/privacy-and-cookies',
+            updated: '22/11/2020'
+          },
+          branding: {
+            removeAbout: true,
+            removeIcon: true
+          },
+          necessaryCookies: [
+            'CookieControl'
+          ],
+          iabCMP: true,
+          iabConfig: {
+            publisherCC: 'GB',
+            dropDowns: true,
+            fullLegalDescriptions: false
+          },
+          text: {
+            iabCMP: {
+              panelTitle: 'Cookie Preferences',
+              panelIntro1: 'We and select companies use cookies to store and retrieve information from your browser. This information may be about you, your preferences or your device and is mostly used to make the site work as you expect. While the information does not usually directly identify you, details such as the device, operating system and type of browser may be considered personal data as it helps to create a more personalised web experience.',
+              panelIntro2: 'You can review how this information is used and customise your content preferences for cookies or for any other identifying technology below. You have the right to object to use of cookies and can do so on an individual basis or globally by clicking “Reject All”.',
+              panelIntro3: '',
+              aboutIab: 'Please refer to the vendor tab for more details. You may change your preferences at any time as described in our ',
+              iabName: 'Cookie Policy',
+              iabLink: 'https://www.majestic.co.uk/content/information/privacy-and-cookies',
+              specialPurposes: 'Essential Purposes'
+            }
+          }
+        };
+
         var config = {
             apiKey: '556ccb32e73c5e54de1b028a7b81e7f4186b1be8',
             product: 'COMMUNITY',
@@ -62,9 +100,10 @@
             ],
     
             position: 'LEFT',
-            theme: 'LIGHT'
+            theme: 'LIGHT',
+            rejectButton: false
         };
-        
+
         CookieControl.load( config );
     </script>
 

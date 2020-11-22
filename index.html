@@ -30,6 +30,44 @@
  
     
     <link rel="stylesheet" type="text/css" href="./index_files/main.css">
+
+    <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+    <script>
+        var config = {
+            apiKey: '556ccb32e73c5e54de1b028a7b81e7f4186b1be8',
+            product: 'COMMUNITY',
+            optionalCookies: [
+                {
+                        name: 'analytics',
+                        label: 'Analytics',
+                        description: '',
+                        cookies: [],
+                        onAccept : function(){},
+                        onRevoke: function(){}
+                    },{
+                        name: 'marketing',
+                        label: 'Marketing',
+                        description: '',
+                        cookies: [],
+                        onAccept : function(){},
+                        onRevoke: function(){}
+                    },{
+                        name: 'preferences',
+                        label: 'Preferences',
+                        description: '',
+                        cookies: [],
+                        onAccept : function(){},
+                        onRevoke: function(){}
+                    }
+            ],
+    
+            position: 'LEFT',
+            theme: 'LIGHT'
+        };
+        
+        CookieControl.load( config );
+    </script>
+
     <script type="text/javascript" async="" src="./index_files/js"></script><script type="text/javascript" async="" src="./index_files/ec.js.download"></script><script type="text/javascript" async="" src="./index_files/heap-1288472202.js.download"></script><script async="" src="./index_files/obtp.js.download" type="text/javascript"></script><script src="./index_files/bat.js.download" async=""></script><script src="./index_files/3448620565200181" async=""></script><script src="./index_files/163713914005344" async=""></script><script async="" src="./index_files/fbevents.js.download"></script><script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script type="text/javascript" async="" src="./index_files/uwt.js.download"></script><script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script async="" src="./index_files/gtm.js.download"></script><script>
     // An array of functions that fragments can add to. They will be run on docReady
     var readyFunctions = [];
